@@ -15,7 +15,7 @@ jobs:
       id: tap-build-push
       uses: ./
       with:
-        repository: simpleviewinc/tap-events-force
+        repository: KegHub/keg-herkin
         cli_git_branch: master
         tap_ref: /ref/heads/tap-alias
         token: ${{ secrets.GIT_TOKEN }}

@@ -1,12 +1,12 @@
 # Overview: 
-`tap-build-action` is a github action that uses the [keg-cli](https://github.com/simpleviewinc/keg-cli) to build any tap's docker image and submit it to the github docker registry. 
+`tap-build-action` is a github action that uses the [keg-cli](https://github.com/KegHub/keg-cli) to build any tap's docker image and submit it to the github docker registry. 
 
-For more information on taps and the keg, see [keg-hub](https://github.com/simpleviewinc/keg-hub)
+For more information on taps and the keg, see [keg-hub](https://github.com/KegHub/keg-hub)
 
 # Usage
 
 ```yml
-- uses: simpleviewinc/tap-build-action@0.0.3
+- uses: KegHub/tap-build-action@0.0.3
   with:
     # The keg-cli git branch to use for building and pushing the image.
     #
@@ -25,7 +25,7 @@ For more information on taps and the keg, see [keg-hub](https://github.com/simpl
 
     # Repository name with owner. 
     #
-    # Example: simpleviewinc/tap-events-force
+    # Example: KegHub/keg-herkin
     # Default: ${{ github.repository }}
     repository: ''
 
