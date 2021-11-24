@@ -2,7 +2,7 @@ set -e
 
 clone_cli () {
   echo "==== Cloning Keg-CLI branch $INPUT_CLI_GIT_BRANCH"
-  git -C $ACTION_WORKSPACE clone --single-branch --branch $INPUT_CLI_GIT_BRANCH https://github.com/simpleviewinc/keg-cli.git
+  git -C $ACTION_WORKSPACE clone --single-branch --branch $INPUT_CLI_GIT_BRANCH https://github.com/KegHub/keg-cli.git
 }
 
 install_cli () {
