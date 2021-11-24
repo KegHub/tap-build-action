@@ -6,7 +6,7 @@ For more information on taps and the keg, see [keg-hub](https://github.com/KegHu
 # Usage
 
 ```yml
-- uses: KegHub/tap-build-action@0.0.3
+- uses: KegHub/tap-build-action@0.0.1
   with:
     # The keg-cli git branch to use for building and pushing the image.
     #
