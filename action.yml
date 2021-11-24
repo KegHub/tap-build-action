@@ -1,4 +1,4 @@
-name: tap-build-action
+name: KegHub/tap-build-action
 description: 'Builds a keg tap package and pushes it to the registry'
 
 branding:
@@ -7,27 +7,33 @@ branding:
 
 inputs:
   cli_git_branch:
+    required: false
     description: 'keg-cli branch to use during execution'
     default: 'develop'
   tap_ref:
+    required: false
     description: >
       The tap branch to checkout (example: /ref/heads/my-feature-branch). When checking out the repository that
       triggered a workflow, this defaults to the reference or SHA for that
       event. 
     default: ${{ github.ref }}
   repository:
+    required: false
     description: 'Repository name with owner. For example, actions/checkout'
     default: ${{ github.repository }}
   tag:
+    required: false
     description: 'the tag of the built tap image'
     default: 'develop'
   token:
+    required: false
     description: >
       Personal access token (PAT) used to fetch the repository and push its image. 
       We recommend using a service account with the least permissions necessary.
       Also when generating a new PAT, select the least scopes necessary.
     default: ${{ github.token }}
   user:
+    required: false
     description: 'The username for docker login'
     default: 'keg-admin'
 
