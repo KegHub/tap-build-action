@@ -8,7 +8,7 @@ clone_cli () {
 install_cli () {
   echo "==== Installing Keg-CLI dependencies..." 
   cd $ACTION_WORKSPACE/keg-cli
-  yarn install
+  yarn install --ignore-engines
 }
 
 setup_cli () {

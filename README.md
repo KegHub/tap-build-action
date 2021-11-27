@@ -3,6 +3,9 @@
 
 For more information on taps and the keg, see [keg-hub](https://github.com/KegHub/keg-hub)
 
+## Notes
+* Uses Docker Image [node:16-alpine](https://hub.docker.com/_/node)
+
 # Usage
 
 ```yml
