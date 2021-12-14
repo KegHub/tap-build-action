@@ -14,10 +14,12 @@ install_cli () {
 setup_cli () {
   cd $ACTION_WORKSPACE/keg-cli
 
-  KEG_ROOT_DIR=$ACTION_WORKSPACE/keg-hub \
-    bash scripts/ci/setupCLIConfig.sh
+  export KEG_ROOT_DIR=$ACTION_WORKSPACE/keg-hub
+  source scripts/ci/setupCLIConfig.sh
 }
 
 clone_cli
 install_cli
 setup_cli
+
+echo "==== Finished Keg-CLI setup"

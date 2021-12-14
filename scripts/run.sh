@@ -48,6 +48,6 @@ check_envs
 
 echo "==== Starting Tap Build Action"
 
-$ACTION_WORKSPACE/scripts/cli.sh
-$ACTION_WORKSPACE/scripts/auth.sh
-$ACTION_WORKSPACE/scripts/tap.sh
+source $ACTION_WORKSPACE/scripts/cli.sh
+source $ACTION_WORKSPACE/scripts/auth.sh
+source $ACTION_WORKSPACE/scripts/tap.sh
