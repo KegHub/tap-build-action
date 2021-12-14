@@ -8,8 +8,10 @@ export TAP_PATH=$TAPS_DIR/$TAP_NAME
 export TAP_ALIAS="client_tap"
 
 clone_tap () {
-  echo "==== Cloning Tap with branch $TAP_BRANCH"
-  git -C $TAPS_DIR clone --single-branch --branch $TAP_BRANCH https://github.com/$INPUT_REPOSITORY
+  
+  echo "==== Cloning Tap from https://github.com/$INPUT_REPOSITORY"
+  echo "==== Using Git Branch $TAP_BRANCH"
+  git -C $TAPS_DIR clone --single-branch --branch $TAP_BRANCH https://$INPUT_TOKEN@github.com/$INPUT_REPOSITORY
 }
 
 install_tap () {

@@ -2,10 +2,6 @@ set -e
 
 echo "==== Setting up Keg-CLI auth..." 
 
-echo "::debug::Current ENVS"
-printenv
-echo "::debug::Current ENVS"
-
 echo "::debug::Loading Keg-CLI.sh script at path $ACTION_WORKSPACE/keg-hub/repos/keg-cli/keg"
 source $ACTION_WORKSPACE/keg-hub/repos/keg-cli/keg
 
